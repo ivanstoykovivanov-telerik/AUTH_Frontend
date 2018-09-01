@@ -11,6 +11,7 @@ import {UserComponent} from './user/user.component';
 import { TestComponent } from './test/test.component';
 import { AdminTestComponent } from './admin-test/admin-test.component';
 import { FooComponent } from './foo/foo.component';
+import { MarketMainPageComponent } from './market/market-main-page/market-main-page.component';
 
 const routes: Routes = [
   {
@@ -39,6 +40,11 @@ const routes: Routes = [
   {
     path: 'test',
     component: TestComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path: 'market',
+    component: MarketMainPageComponent,
     canActivate: [AuthGuard]
   },
   {

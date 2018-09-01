@@ -21,6 +21,15 @@ import {AppDataService} from './services/app-data.service';
 import { TestComponent } from './test/test.component';
 import { AdminTestComponent } from './admin-test/admin-test.component';
 import { FooComponent } from './foo/foo.component';
+import { TagComponent } from './tags/tag/tag.component';
+import { TagAddComponent } from './tags/tag-add/tag-add.component';
+import { ProductComponent } from './products/product/product.component';
+import { ProductDetailsComponent } from './products/product-details/product-details.component';
+import { ProductsOfUserComponent } from './products/products-of-user/products-of-user.component';
+import { MarketMainPageComponent } from './market/market-main-page/market-main-page.component';
+import { MarketShowSectionComponent } from './market/market-show-section/market-show-section.component';
+import { CarouselComponent } from './market/carousel/carousel.component';
+import { ProductSearchComponent } from './products/product-search/product-search.component';
 
 export function authHttpServiceFactory(http: Http) {
   return new AuthHttp(new AuthConfig({
@@ -42,7 +51,16 @@ export function authHttpServiceFactory(http: Http) {
     LoginComponent,
     TestComponent,
     AdminTestComponent,
-    FooComponent
+    FooComponent,
+    TagComponent,
+    TagAddComponent,
+    ProductComponent,
+    ProductDetailsComponent,
+    ProductsOfUserComponent,
+    MarketMainPageComponent,
+    MarketShowSectionComponent,
+    CarouselComponent,
+    ProductSearchComponent
   ],
   imports: [
     BrowserModule,
